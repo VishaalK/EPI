@@ -15,7 +15,7 @@ class ReaderWriterLock {
 private:
     bool writer;
 
-    std::atomic<int> num_readers;
+    int num_readers;
     std::atomic<int> num_writers;
 
 public:
